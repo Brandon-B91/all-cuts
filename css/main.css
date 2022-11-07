@@ -16,14 +16,13 @@ header {
 }
 
 .header-img {
-    display: block;
-    width: 30%;
+  display: block;
+  width: 30%;
 }
 
 .header-img img {
   display: block;
   width: 70%;
-
 }
 
 header img:hover {
@@ -73,11 +72,13 @@ header .fa-xmark {
   font-size: 24px;
   text-align: center;
   margin-right: -200px;
-  transition: margin 0.5s ease-in-out;
+  transition: margin 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
 }
 
 .menu.active {
   margin-right: 0;
+  opacity: 1;
 }
 
 .menu-head {
@@ -121,7 +122,7 @@ main::before {
 
 h1 {
   font-size: 58px;
-  padding-bottom: 3%;
+  padding-bottom: 1%;
   z-index: 9;
   color: #86f67f;
 }
@@ -271,13 +272,12 @@ footer i {
   }
 
   header .fa-bars-staggered {
-      display: block;
+    display: block;
     position: absolute;
     right: 0;
-    z-index: 999;
     margin-right: 3%;
     opacity: 1;
-    transition: opacity 0.3s 0.1s ease-in-out, transform 0.7s ease-in-out;
+    transition: opacity 0.5s 0.1s ease-in-out, transform 0.7s ease-in-out;
   }
 
   .fa-bars-staggered.active {
@@ -286,12 +286,11 @@ footer i {
   }
 
   header .fa-xmark {
-      display: block;
+    display: block;
     position: absolute;
     right: 20px;
-    z-index: 999;
     opacity: 0;
-    transition: opacity 0.3s 0.1s ease-in-out, transform 0.8s ease-in-out;
+    transition: opacity 0.1s ease-in-out, transform 0.8s ease-in-out;
   }
 
   .fa-xmark.active {
