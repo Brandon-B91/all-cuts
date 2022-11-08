@@ -277,12 +277,14 @@ footer i {
     right: 0;
     margin-right: 3%;
     opacity: 1;
-    transition: opacity 0.5s 0.1s ease-in-out, transform 0.7s ease-in-out;
+    z-index: 999;
+    transition: opacity 0.5s 0.1s ease-in-out, transform 0.6s ease-in-out;
   }
 
   .fa-bars-staggered.active {
     opacity: 0;
     transform: rotate(540deg);
+    z-index: 998;
   }
 
   header .fa-xmark {
@@ -290,12 +292,14 @@ footer i {
     position: absolute;
     right: 20px;
     opacity: 0;
-    transition: opacity 0.1s ease-in-out, transform 0.8s ease-in-out;
+    z-index: 998;
+    transition: opacity 0.3s ease-out, transform 0.6s ease-in-out;
   }
 
   .fa-xmark.active {
     opacity: 1;
     transform: rotate(360deg);
+    z-index: 999;
   }
 
   h1 {
@@ -336,6 +340,14 @@ footer i {
 
   .footer-head {
     padding: 2.5%;
+  }
+
+  footer a {
+    color: white;
+  }
+
+  footer cite {
+    margin-bottom: 5%;
   }
 
   .footer-bottom {

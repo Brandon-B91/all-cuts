@@ -14,3 +14,18 @@ x.addEventListener('click', () => {
     bars.classList.remove('active')
     x.classList.remove('active')
 })
+
+function mapApp() {
+    let maps = document.querySelector('.maps');
+    maps.addEventListener('click', () => {
+        /* if we're on iOS, open in Apple Maps */
+        if ((navigator.platform.indexOf("iPhone") != -1) ||
+            (navigator.platform.indexOf("iPad") != -1) ||
+            (navigator.platform.indexOf("iPod") != -1))
+            window.open('maps://maps.google.com/maps/dir/?daddr=3865 + Isleta + Blvd + SW, +Albuquerque, +NM + 87105');
+        else /* else use Google */
+            window.open('https://maps.google.com/maps/dir/?daddr=3865 + Isleta + Blvd + SW, +Albuquerque, +NM + 87105');
+    });
+
+};
+mapApp();
