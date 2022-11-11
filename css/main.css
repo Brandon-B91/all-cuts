@@ -102,6 +102,10 @@ header .fa-xmark {
   margin: 25%;
 }
 
+.menu a {
+  color: black;
+}
+
 main {
   height: 500px;
   display: flex;
@@ -307,7 +311,7 @@ footer i {
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 48px;
   }
 
   hr {
